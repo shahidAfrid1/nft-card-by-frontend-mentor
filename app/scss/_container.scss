@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $darkBlueMBG;
+  overflow: hidden;
+  .card {
+    width: 21.9375rem;
+    height: 34.25rem;
+    background-color: $darkBlueCBG;
+    border-radius: 0.9375rem;
+    padding: 1.5625rem 1.4375rem;
+
+    .img {
+      width: 100%;
+      height: 60%;
+      background-image: url("/images/image-equilibrium.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 0.3125rem;
+      cursor: pointer;
+      .hoverCls {
+        width: 100%;
+        height: 100%;
+        background-color: hsla(178, 100%, 50%, 0.5);
+        border-radius: 0.3125rem;
+        visibility: hidden;
+      }
+      &:hover {
+        .hoverCls {
+          visibility: visible;
+        }
+      }
+    }
+
+    > h3 {
+      color: $white;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        color: $cyan;
+      }
+    }
+
+    > p {
+      color: $softBlue;
+      font-weight: 400;
+    }
+
+    .icons {
+      .icon1 {
+        color: $cyan;
+
+        > img {
+          margin-right: 0.4375rem;
+        }
+      }
+
+      .icon2 {
+        color: $softBlue;
+        > img {
+          margin-right: 0.4375rem;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 0.0625rem;
+      background-color: $darkBlueLine;
+      margin-top: 0.9375rem;
+      margin-bottom: 0.9375rem;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      color: $softBlue;
+      > img {
+        width: 1.875rem;
+        border: 0.0625rem solid white;
+        border-radius: 50%;
+        margin-right: 0.625rem;
+      }
+      > span {
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: $cyan;
+        }
+      }
+    }
+  }
+
+}

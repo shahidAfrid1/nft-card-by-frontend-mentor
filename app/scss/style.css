@@ -1,0 +1,153 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.3;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-ai {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d192b;
+  overflow: hidden;
+}
+
+.container .card {
+  width: 21.9375rem;
+  height: 34.25rem;
+  background-color: #14253d;
+  border-radius: 0.9375rem;
+  padding: 1.5625rem 1.4375rem;
+}
+
+.container .card .img {
+  width: 100%;
+  height: 60%;
+  background-image: url("/images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.container .card .img .hoverCls {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.5);
+  border-radius: 0.3125rem;
+  visibility: hidden;
+}
+
+.container .card .img:hover .hoverCls {
+  visibility: visible;
+}
+
+.container .card > h3 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container .card > h3:hover {
+  color: #00fff7;
+}
+
+.container .card > p {
+  color: #8bacda;
+  font-weight: 400;
+}
+
+.container .card .icons .icon1 {
+  color: #00fff7;
+}
+
+.container .card .icons .icon1 > img {
+  margin-right: 0.4375rem;
+}
+
+.container .card .icons .icon2 {
+  color: #8bacda;
+}
+
+.container .card .icons .icon2 > img {
+  margin-right: 0.4375rem;
+}
+
+.container .card .line {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #2f415b;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.container .card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+}
+
+.container .card .profile > img {
+  width: 1.875rem;
+  border: 0.0625rem solid white;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+}
+
+.container .card .profile > span {
+  color: white;
+  cursor: pointer;
+}
+
+.container .card .profile > span:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=style.css.map */
